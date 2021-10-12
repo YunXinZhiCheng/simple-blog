@@ -52,7 +52,7 @@
 
 <script>
 import BlogItem from '@/components/BlogItem'
-// import axios from 'axios'
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -79,7 +79,7 @@ export default {
       axios({
         url: 'https://ku.qingnian8.com/dataApi/blog/classBlog.php',
       }).then((res) => {
-        console.log(res.data)
+        // console.log(res.data)
         this.classList = res.data
       })
     },
@@ -105,7 +105,7 @@ export default {
         url: 'https://ku.qingnian8.com/dataApi/blog/addBlog.php',
         params: this.itemObj,
       }).then((res) => {
-        console.log(res)
+        // console.log(res)
       })
     },
   },

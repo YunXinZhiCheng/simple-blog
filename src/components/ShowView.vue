@@ -74,7 +74,7 @@ export default {
           page: this.page,
         },
       }).then((res) => {
-        console.log(res)
+        // console.log(res)
         this.listArr = res.data
         this.showToast = false // 上面数据加载完后，就隐藏加载提示
       })
